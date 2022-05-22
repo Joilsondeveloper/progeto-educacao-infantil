@@ -1,1 +1,405 @@
+@charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --cor0: #82D6FB;
+  --cor1: #FCD6CD;
+  --cor2: #D9EDC8;
+  --cor3: #FEFFEF;
+  --cor4: #FDDA7E;
+  
+  --fonte-conteudo: 'Roboto Slab', serif;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: var(--fonte-conteudo);
+   text-decoration: none;
+   list-style: none;
+}
+
+html, body {
+   scroll-behavior: smooth;
+   background-color: var(--cor3);
+   height: 100vh;
+}
+
+/* CONTEINER MENU */
+
+.conteiner-menu {
+   border: 1px solid #eee;
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 15px;
+}
+
+.logo a {
+   display: flex;
+   align-items: center;
+}
+
+.logo a img {
+   width: 46px;
+   margin-right: 5px;
+}
+
+.logo a h2 {
+   color: #000;
+   font-size: 1.5em;
+}
+
+.btn-lateral {
+   background-color: #000;
+   color: #fff;
+   border: none;
+   outline: none;
+   padding: 6px 10px;
+   border-radius: 2px;
+   font-size: 0.6em;
+   font-weight: 600;
+   text-transform: uppercase;
+   display: flex;
+   align-items: center;
+}
+
+.btn-lateral ion-icon {
+   font-size: 1.8em;
+   margin-right: 4px;
+}
+
+/* MENUS BARRA LATERAL */
+
+.menus-lateral {
+   background-color: #46758A;
+   position: fixed;
+   right: 0;
+   top: 0px;
+   width: 0;
+   height: 90%;
+   overflow-x: hidden;
+   overflow-y: scroll;
+   transition: width 0.4s;
+   z-index: 1000;
+   border-radius: 4px;
+}
+
+.btn-fechar {
+   background-color: #000;
+   color: #fff;
+   display: block;
+   font-size: 0.6em;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 14px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+}
+
+.btn-fechar ion-icon {
+   font-size: 2.2em;
+}
+
+.menus-lateral p {
+   background-color: #000;
+   color: #fff;
+   font-size: 0.6em;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 15px;
+}
+
+.menus-lateral a {
+   color: #fff;
+   font-size: 0.9em;
+   display: flex;
+   align-items: center;
+   padding: 12px 15px;
+   margin: 10px 0px;
+}
+
+.menus-lateral a:hover {
+   background-color: var(--cor0);
+}
+
+.menus-lateral a ion-icon {
+   font-size: 1.2em;
+   margin-right: 10px;
+}
+
+/* REDE SOCIAL */
+
+.menus-lateral .rede-social a {
+   display: flex;
+   align-items: center;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+   background: linear-gradient(to right, rgba(0,0,0,0.650), rgba(0,0,0,0.650)), url('../img/estudante-bonito-saiu-em-uniforme-estudando.jpg') no-repeat center;
+   background-size: cover;
+   width: 100vw;
+   height: 90vh;
+   padding: 0 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.conteudo-titulo {
+   color: #fff;
+   text-align: center;
+}
+
+.conteudo-titulo h1 {
+   font-size: 1.6em;
+   margin-top: 80px;
+   margin-bottom: 10px;
+}
+
+.conteudo-titulo h3 {
+   font-size: 1em;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+.conteudo-titulo a {
+   background-color: var(--cor0);
+   color: #000;
+   display: inline-block;
+   padding: 10px 50px;
+   font-size: 0.6em;
+   font-weight: 700;
+   text-transform: uppercase;
+   border-radius: 2px;
+}
+
+/* CONTEINER SECTION 1 */
+
+#section-1 {
+   background-color: #fff;
+   padding: 30px 20px 50px 20px;
+}
+
+#section-1 h2 {
+   font-size: 2em;
+   margin-bottom: 30px;
+}
+
+.conteudo-1 aside img {
+   width: 100%;
+   border-radius: 4px;
+   box-shadow: 2px 2px 1px rgba(0,0,0,0.300);
+}
+
+.conteudo-1 article {
+   margin-top: 15px;
+}
+
+.conteudo-1 article p {
+   text-align: justify;
+   line-height: 1.5em;
+   margin-bottom: 15px;
+}
+
+.conteudo-1 article a {
+   background-color: var(--cor0);
+   color: #000;
+   display: inline-block;
+   font-size: 0.6em;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 10px 40px;
+   border-radius: 2px;
+}
+
+/* CONTEINER SECTION 2 */
+
+#section-2 {
+   background-color: var(--cor0);
+   padding: 30px 20px 50px 20px;
+}
+
+#section-2 h2 {
+   font-size: 2em;
+   margin-bottom: 30px;
+}
+
+#section-2 article:first-child {
+   margin-bottom: 30px;
+}
+
+#section-2 article img {
+   width: 100%;
+   border-radius: 4px;
+   box-shadow: 1px 1px 1px rgba(0,0,0,0.100);   
+}
+
+#section-2 article p {
+   text-align: justify;
+   line-height: 1.5em;
+   margin-top: 15px;
+}
+
+/* CONTEINER SECTION 3 */
+
+#section-3 {
+   background-color: #fff;
+   padding: 30px 20px 50px 20px;
+}
+
+#section-3 h2 {
+   font-size: 2em;
+   margin-bottom: 30px;
+}
+
+#section-3 p {
+   text-align: justify;
+   line-height: 1.5em;
+}
+
+.conteudo-3 div {
+   margin-top: 30px;
+   border-radius: 6px;
+   box-shadow: 2px 2px 4px rgba(0,0,0,0.200);
+}
+
+.conteudo-3 div img {
+   width: 100%;
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+}
+
+.conteudo-3 div h3 {
+   font-size: 1em;
+   text-align: center;
+   padding: 2px 0 8px 0;
+}
+
+/* CONTEINER SECTION 4 */
+
+#section-4 {
+   background-color: var(--cor0);
+   padding: 30px 20px 50px 20px;
+}
+
+#section-4 h2 {
+   font-size: 2em;
+   margin-bottom: 20px;
+}
+
+#section-4 p {
+   text-align: justify;
+   line-height: 1.5em;
+   margin-bottom: 30px;
+}
+
+.conteiner-video video {
+   width: 100%;
+   height: 100%;
+   border-radius: 4px;
+}
+
+/* CONTEINER SECTION 5 */
+
+#section-5 {
+   background-color: #fff;
+   padding: 30px 20px 10px 30px;
+}
+
+#section-5 h2 {
+   font-size: 2em;
+   margin-bottom: 20px;
+}
+
+#section-5 p {
+   text-align: justify;
+   line-height: 1.5em;
+   margin-bottom: 20px;
+}
+
+#section-5 form label {
+   display: block;
+   font-weight: 500;
+}
+
+#section-5 form input[type=text], input[type=email] {
+   background-color: #eee;
+   border: none;
+   outline: none;
+   padding: 12px;
+   margin: 10px 0px;
+   width: 100%;
+   border-radius: 4px;
+}
+
+#section-5 form input[type=submit] {
+   background-color: black;
+   color: #fff;
+   font-size: 0.8em;
+   font-weight: 500;
+   border: none;
+   outline: none;
+   padding: 8px 15px;
+   border-radius: 4px;
+   margin-top: 10px;
+}
+
+/* RODAPÉ */
+
+footer {
+   background-color: #fff;
+   padding: 30px 20px 0 20px;
+}
+
+.creditos-img h3 {
+   font-size: 1.2em;
+   margin-bottom: 15px;
+}
+
+.creditos-img p {
+   margin-bottom: 15px;
+}
+
+.creditos-img ul li {
+   margin-top: 15px;
+}
+
+footer .criador {
+   background-color: #000;
+   color: #fff;
+   font-size: 0.8em;
+   text-align: center;
+   padding: 10px;
+   margin: 40px -20px 0px -20px;
+}
+
+footer .criador a {
+   color: var(--cor0);
+   font-weight: 500;
+}
+
+footer .criador a:hover {
+   text-decoration: underline;
+}
+
+/* MENU TELA GRANDE */
+
+.conteiner-menu .menus {
+   display: none;
+}
+
+/* REDE SOCIAL TELA GRANDE */
+
+.rede-sociais {
+   display: none;
+}
